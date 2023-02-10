@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import Carousel from "./Components/Carousel";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header />
+    <Carousel layout='row' title='Action & Drama Movies'/>
+    <Carousel layout='row-reverse' title='Funniest Comedy Movies of 2018' />
+    </>
+  )
 }
 
 export default App;
